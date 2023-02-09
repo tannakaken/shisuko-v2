@@ -1,0 +1,17 @@
+name: Vivliostyle build in Docker
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: docker build . --file Dockerfile --tag my-image
+    - run: docker run --rm -v $(pwd):/app my-image su build.sh
+    - uses: actions/upload-artifact@v2
+      with:
+        name: book
+        path: 詩晒古　第二号.pdf
