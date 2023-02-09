@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: docker build . --file Dockerfile --tag my-image
-    - run: docker run --rm -v $(pwd):/app my-image sh build.sh
+    - run: docker run --rm -v $(pwd):/app my-image sudo sh build.sh
     - uses: actions/upload-artifact@v2
       with:
         name: book
