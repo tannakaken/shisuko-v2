@@ -13,9 +13,10 @@ RUN apt-get update && apt-get install -y \
   libgbm-dev \
   libasound-dev \
   fonts-ipaexfont \
- && apt-get clean \
- && rm -rf /var/lib/apt/lists/*
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY package.json .
 COPY package-lock.json .
+COPY build.sh .
 RUN npm install
