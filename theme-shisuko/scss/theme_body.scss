@@ -1,0 +1,23 @@
+@import 'theme_common';
+
+h5:first-child {
+    display: none;
+}
+
+@page :left {
+    @top-left {
+        content: counter(page) '　' env(doc-title);
+        margin-left: 7pt;
+        margin-top: 8.5mm;
+        writing-mode: horizontal-tb;
+    }
+}
+
+@page :right {
+    @top-right {
+      content: counter(page);
+      margin-right: 7pt;
+      margin-top: 8.5mm;
+      writing-mode: horizontal-tb;
+    }
+  }

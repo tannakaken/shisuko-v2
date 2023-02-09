@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import 'theme_common';
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: xx-large;
+    text-shadow: 10px 10px #DDD;
+}

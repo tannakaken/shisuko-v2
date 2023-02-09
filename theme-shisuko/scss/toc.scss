@@ -1,0 +1,46 @@
+@import 'theme_common';
+
+#toc {
+    padding-top: 3rem;
+    li {
+        list-style-type: cjk-ideographic;
+
+        li {
+            list-style: none;
+        }
+
+        ol {
+            padding-left: 1em;
+        }
+    
+        a {
+            display: inline-flex;
+            height: 100%;
+            align-items: baseline;
+        
+            &::before {
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+                border-bottom: 1px dotted;
+                content: '';
+                order: 1;
+                flex: auto;
+            }
+        
+            &::after {
+                content: target-counter(attr(href), page, trad-chinese-informal);
+                align-self: flex-end;
+                flex: none;
+                order: 2;
+            }
+        }
+        
+    }
+    span.chapter-author {
+        margin-top: 1rem;
+    }
+}
+
+h2.special-thanks {
+    text-align: end;
+}

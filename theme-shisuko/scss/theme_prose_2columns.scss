@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import 'theme_body';
+
+@media print {
+    html {
+        column-count: 2;
+        column-gap: 2em;
+        width: 100vw;
+        column-rule: solid 1px #ccc;
+        column-gap: 3rem;
+    }
+  }

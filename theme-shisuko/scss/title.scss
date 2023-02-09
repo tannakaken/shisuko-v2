@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import 'theme_common';
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    h1 {
+        margin-top: 15%;
+    }
+    h2.chapter-author {
+        margin-bottom: 15%;
+    }
+}

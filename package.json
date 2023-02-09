@@ -1,0 +1,17 @@
+{
+  "name": "shisuko-v2",
+  "description": "詩晒古　第二号",
+  "version": "0.1.0",
+  "author": "Tannakaken <tannakaken@gmail.com>",
+  "scripts": {
+    "build": "vivliostyle build",
+    "preview": "vivliostyle preview",
+    "clean": "rm manuscripts/*.html theme-shisuko/*.css theme-shisuko/*.css.map",
+    "clean:pdf": "rm *.pdf"
+  },
+  "dependencies": {
+    "@vivliostyle/cli": "latest"
+  },
+  "license": "CC-BY-SA-3.0",
+  "private": false
+}
