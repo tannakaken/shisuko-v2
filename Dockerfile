@@ -20,3 +20,5 @@ COPY package.json .
 COPY package-lock.json .
 COPY build.sh .
 RUN npm install
+RUN cd theme-shisuko; npm install
+
