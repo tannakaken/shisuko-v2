@@ -133,3 +133,5 @@ dist
 *.pdf
 themes/
 publication.json
+
+.DS_Store

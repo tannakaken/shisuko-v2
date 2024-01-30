@@ -12,6 +12,10 @@ module.exports = {
       theme: 'theme-shisuko/empty.css'
     },
     {
+      path: 'manuscripts/preface.md',
+      theme: "theme-shisuko/theme_prose_2columns.css"
+    },
+    {
       path: 'manuscripts/aosuiren.md',
       theme: "theme-shisuko/theme_prose_2columns.css"
     },

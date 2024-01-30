@@ -82,7 +82,7 @@
 
 <h2 class="chapter-author">ヤミー</h2>
 
-<コメントなし>
+【コメントなし】
 
 <hr class="space" />
 
@@ -98,4 +98,4 @@
 
 <h2 class="chapter-author">黒澤梨絵</h2>
 
-<コメントなし>
+【コメントなし】
