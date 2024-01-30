@@ -1,5 +1,5 @@
 name: Vivliostyle build in Docker
-
+# read and write permissionが必要
 on:
   push:
     branches: [main]
