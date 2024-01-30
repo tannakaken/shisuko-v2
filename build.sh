@@ -5,5 +5,5 @@ npm install
 npm run build:scss
 cd ..
 npm install
-sudo npm run build
+npm run build
 
