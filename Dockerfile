@@ -18,8 +18,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY package.json .
 COPY package-lock.json .
-COPY theme-shisuko/package.json .
-COPY theme-shisuko/package-lock.json .
+RUN mkdir /theme-shisuko
+COPY theme-shisuko/package.json /theme-shisuko
+COPY theme-shisuko/package-lock.json /theme-shisuko
 COPY build.sh .
 RUN npm install
 WORKDIR /theme-shisuko
