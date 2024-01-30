@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
   libgbm-dev \
   libasound-dev \
   fonts-ipaexfont \
+  sudo \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
