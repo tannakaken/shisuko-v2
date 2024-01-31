@@ -21,4 +21,4 @@ COPY package-lock.json .
 RUN mkdir /theme-shisuko
 COPY theme-shisuko/package.json /theme-shisuko
 COPY theme-shisuko/package-lock.json /theme-shisuko
-COPY build.sh .
+COPY build_upload.sh .
