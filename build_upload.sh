@@ -16,6 +16,7 @@ res=`curl -L -H "Accept: application/vnd.github+json" -H "Authorization: token $
   \"prerelease\": false
 }"`
 
+echo $res
 # extract asset url
 assets_url=`echo ${res} | python3 -c 'import json,sys;print(json.load(sys.stdin)["assets_url"])'`
 
