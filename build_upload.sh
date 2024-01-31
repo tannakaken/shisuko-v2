@@ -23,4 +23,4 @@ rel_id=`echo ${res} | python3 -c 'import json,sys;print(json.load(sys.stdin)["id
 # upload built pdf
 curl -H "Authorization: token $GITHUB_TOKEN" -X POST https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases/${rel_id}/assets?name=main.pdf\
   --header 'Content-Type: application/pdf'\
-  --upload-file main.pdf
+  --upload-file '詩晒古　第二号.pdf'
