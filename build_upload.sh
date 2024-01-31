@@ -7,7 +7,7 @@ cd ..
 npm install
 npm run build
 
-res=`curl -L -H "Accept: application/vnd.github+json" -H "Authorization: token $GITHUB_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" -X POST "https://api.github.com/repos/tannakaken/${GITHUB_REPOSITORY}/releases" -d "
+res=`curl -L -H "Accept: application/vnd.github+json" -H "Authorization: token $GITHUB_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" -X POST "https://api.github.com/repos/${GITHUB_REPOSITORY_OWNER}/${GITHUB_REPOSITORY}/releases" -d "
 {
   \"tag_name\": \"v$GITHUB_SHA\",
   \"target_commitish\": \"$GITHUB_SHA\",
