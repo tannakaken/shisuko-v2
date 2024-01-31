@@ -10,4 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: docker build . --file Dockerfile --tag my-image
-      - run: docker run --rm --env PLAYWRIGHT_BROWSERS_PATH=/app/ms-playwright --env GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} --env GITHUB_REPOSITORY=${GITHUB_REPOSITORY} --env GITHUB_SHA=${GITHUB_SHA} --cap-add=SYS_ADMIN -w /app -v $(pwd):/app my-image bash build_upload.sh
+      - name: Set current datetime as env variable
+        env:
+          TZ: "Asia/Tokyo" # タイムゾーン指定
+        run: echo "CURRENT_DATETIME=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+      - run: docker run --rm --env PLAYWRIGHT_BROWSERS_PATH=/app/ms-playwright --env GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} --env GITHUB_REPOSITORY=${GITHUB_REPOSITORY} --env GITHUB_SHA=${GITHUB_SHA} --env CURRENT_DATETIME=${CURRENT_DATETIME} --cap-add=SYS_ADMIN -w /app -v $(pwd):/app my-image bash build_upload.sh
