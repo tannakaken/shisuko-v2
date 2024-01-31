@@ -1,5 +1,5 @@
 module.exports = {
-  title: '詩晒古　第二号', // populated into `publication.json`, default to `title` of the first entry or `name` in `package.json`.
+  title: '詩晒古_第二号', // populated into `publication.json`, default to `title` of the first entry or `name` in `package.json`.
   author: 'Tannakaken <tannakaken@gmail.com>', // default to `author` in `package.json` or undefined.
   theme: 'theme-shisuko/theme_poem.css', // .css or local dir or npm package. default to undefined.
   entry: [
