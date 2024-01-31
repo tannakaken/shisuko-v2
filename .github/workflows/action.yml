@@ -10,4 +10,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: docker build . --file Dockerfile --tag my-image
-      - run: docker run --rm --env PLAYWRIGHT_BROWSERS_PATH=/app/ms-playwright GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} --cap-add=SYS_ADMIN -w /app -v $(pwd):/app my-image sh build_upload.sh
+      - run: docker run --rm --env PLAYWRIGHT_BROWSERS_PATH=/app/ms-playwright --env GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} --cap-add=SYS_ADMIN -w /app -v $(pwd):/app my-image sh build_upload.sh
