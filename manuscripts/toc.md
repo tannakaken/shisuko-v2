@@ -17,7 +17,7 @@
    1. [｢尾形亀之助全集未収録詩｣ <span class="chapter-author">漆草</span>](urushikusa3_title.html)
    2. [｢私の好きな詩人　第一回　尾形亀之助｣ <span class="chapter-author">漆草</span>](urushikusa4_title.html)
 6. [特集「文士追悼」](mourning.html)
-   1. [「伏竜誄」他 <span class="chapter-author">青酔蓮</span>](aosuiren3.html)
+   1. [「伏竜誄」 <span class="chapter-author">青酔蓮</span>](aosuiren3.html)
 7. [跋「詩は志なり――「まこと」を愛した君を悼む」](aosuiren5_title.html)
 8. [編集後記、附けたり解題](afterword.html)
 
