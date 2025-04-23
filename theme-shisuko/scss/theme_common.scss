@@ -9,10 +9,7 @@
 
 @charset "UTF-8";
 
-@font-face {
-  font-family: 'Oradano';
-  src: url('./OradanoGSSR.ttf') format('truetype');
-}
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
 
 html {
   writing-mode: vertical-rl;
@@ -31,11 +28,11 @@ html {
   height: 468pt;
   margin: auto;
   font-size: 8.5pt;
-  font-family: 'Oradano', '游明朝', 'YuMincho', serif;
+  font-family: "Sawarabi Mincho", serif;
 }
 
 html {
-  font-family: 'Oradano', '游明朝', 'YuMincho', serif;
+  font-family: "Sawarabi Mincho", serif;
   text-align: justify;
   /* 約物の調整、和欧文間スペース */
   text-spacing: space-first allow-end ideograph-alpha ideograph-numeric;
