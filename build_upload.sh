@@ -3,6 +3,7 @@
 cd theme-shisuko
 npm install
 npm run build:scss
+ls
 cd ..
 npm install
 npm run build
