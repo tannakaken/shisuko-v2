@@ -9,6 +9,11 @@
 
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'Oradano';
+  src: url('./OradanoGSSR.ttf') format('truetype');
+}
+
 html {
   writing-mode: vertical-rl;
   orphans: 1;
@@ -26,11 +31,11 @@ html {
   height: 468pt;
   margin: auto;
   font-size: 8.5pt;
-  font-family: '游明朝', 'YuMincho', serif;
+  font-family: 'Oradano', '游明朝', 'YuMincho', serif;
 }
 
 html {
-  font-family: '游明朝', 'YuMincho', serif;
+  font-family: 'Oradano', '游明朝', 'YuMincho', serif;
   text-align: justify;
   /* 約物の調整、和欧文間スペース */
   text-spacing: space-first allow-end ideograph-alpha ideograph-numeric;
