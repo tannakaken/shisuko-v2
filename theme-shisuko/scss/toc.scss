@@ -1,6 +1,12 @@
 @import 'theme_common';
 
 #toc {
+    .yoko {
+        display: inline-block;
+        transform: rotate(90deg);
+        text-indent: 0;
+
+    }
     padding-top: 3rem;
     li {
         list-style-type: cjk-ideographic;
@@ -28,10 +34,12 @@
             }
         
             &::after {
-                content: target-counter(attr(href), page, trad-chinese-informal);
+                content: target-counter(attr(href), page, decimal);
                 align-self: flex-end;
+                justify-content: flex-start;
                 flex: none;
                 order: 2;
+                writing-mode: horizontal-tb;
             }
         }
         

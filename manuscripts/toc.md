@@ -2,7 +2,7 @@
 
 # 詩晒古　第二号
 
-## ~目次~
+## <span class="yoko">〜</span> 目次 <span class="yoko">〜</span>
 
 1. [これは追悼文ではない](preface.html)
 2. [序「神無き月の夜に｣](aosuiren.html)

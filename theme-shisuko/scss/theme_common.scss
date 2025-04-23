@@ -9,7 +9,7 @@
 
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Sawarabi+Mincho&display=swap");
 
 html {
   writing-mode: vertical-rl;
@@ -28,11 +28,11 @@ html {
   height: 468pt;
   margin: auto;
   font-size: 8.5pt;
-  font-family: "Sawarabi Mincho", serif;
+  font-family: "Hina Mincho", serif;
 }
 
 html {
-  font-family: "Sawarabi Mincho", serif;
+  font-family: "Hina Mincho", serif;
   text-align: justify;
   /* 約物の調整、和欧文間スペース */
   text-spacing: space-first allow-end ideograph-alpha ideograph-numeric;
